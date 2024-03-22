@@ -127,13 +127,18 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className='col mb-5 text-center'>
+                                <div className='col mb-2 text-center'>
                                     <Form.Control id='password' name='password' type='password' value={formData.password} 
-                                        onChange={handleInputChange} placeholder='..........' onKeyDown={resetInvalid} required>
+                                        onChange={handleInputChange} placeholder='*********' onKeyDown={resetInvalid} required>
                                     </Form.Control>   
                                 </div>
                             </div>
                         </Form.Group>
+                        <div className='row'>
+                            <div className='col mb-3 text-end'>
+                                <button type='submit' className='btn btn-link'>Forgot Password?</button>
+                            </div>
+                        </div>
                         <div className='row'>
                             <div className='d-grid gap-2 col mx-auto'>
                                 <Button type='submit'>Login</Button>
@@ -142,9 +147,9 @@ export default function Login() {
                     </Form>
                 </div>
                 <div className='row mb-4'></div>
-                <div className='row'>
-                    <div className='col mb-3 text-center'>
-                        <button type='submit' className='btn btn-link'>Forgot Password?</button>
+                <div className='row mb-3'>
+                    <div className='col text-center'>
+                        <button type='submit' className='btn btn-outline-primary'>Create an Account</button>
                     </div>
                 </div>
             </div>
