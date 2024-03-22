@@ -12,7 +12,7 @@ export default function Landing() {
                         </div>
                         <div className="col-6">
                             <div className="row mb-3"></div>
-                            <div className="row mb-4">
+                            <div className="row mb-5">
                                 <div className="col">
                                     <img src={process.env.PUBLIC_URL + '/landing-img.jpg'} alt="mobile-img" className="rounded" width={450}></img>
                                 </div>
