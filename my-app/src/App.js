@@ -3,6 +3,7 @@ import './App.css';
 import Landing from './landing';
 import { Route, Routes } from 'react-router-dom'
 import Home from './home';
+import Registration from './registration';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <>
         <Routes>
           <Route path='/' element={<Landing></Landing>}></Route>
+          <Route path='/register' element={<Registration></Registration>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
         </Routes>
       </>

@@ -16,3 +16,18 @@ export async function post (uri, data) {
         return {'code' : error.code, 'msg' : error.message};   
     }
 }
+
+export async function get (uri, headers) {
+    try {
+        const response = await axios.get(baseUrl + uri, {headers : headers});
+        if (response.status === 200) {
+            const data = response.data;
+            return data;
+        } else {
+            return {'code' : response.code, 'msg' : response.message};   
+        }
+    } catch (error) {
+        console.error(error);
+        return {'code' : error.code, 'msg' : error.message};   
+    }
+}
