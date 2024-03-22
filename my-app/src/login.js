@@ -149,7 +149,7 @@ export default function Login() {
                 <div className='row mb-4'></div>
                 <div className='row mb-3'>
                     <div className='col text-center'>
-                        <button type='submit' className='btn btn-outline-primary' data-bs-toggle="button" >Create an Account</button>
+                        <button type='submit' className='btn btn-outline-primary'>Create an Account</button>
                     </div>
                 </div>
             </div>
