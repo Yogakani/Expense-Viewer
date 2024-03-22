@@ -1,6 +1,8 @@
 import { useLayoutEffect } from 'react';
 import './App.css';
 import Landing from './landing';
+import { Route, Routes } from 'react-router-dom'
+import Home from './home';
 
 function App() {
   
@@ -10,7 +12,12 @@ function App() {
   
   
   return (
-      <Landing></Landing>
+      <>
+        <Routes>
+          <Route path='/' element={<Landing></Landing>}></Route>
+          <Route path='/home' element={<Home></Home>}></Route>
+        </Routes>
+      </>
   );
 }
 
