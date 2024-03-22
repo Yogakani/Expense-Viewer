@@ -81,11 +81,15 @@ export default function Login() {
         <div className="card mt-3 mb-3 p-1 border-end" style={{width:450}}>
             <div className="card-body">
                 <div className="row">
-                    <div className="col mb-5 text-start">
+                    <div className="col mb-2 text-start">
                         <b>ExpenseViewer</b>
                     </div>
                 </div>
-                <div className="row mb-5"></div>
+                <div className='row'>
+                    <div className='col mb-3 text-center'>
+                        <img src={process.env.PUBLIC_URL + '/foursquare.png'} alt="logo" className='rounded'></img>
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col mb-4 text-center">
                         <h3 className="fst-normal">Login to Your Account!</h3>
