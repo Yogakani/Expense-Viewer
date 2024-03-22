@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import ErrorPopup from './component/ErrorPopup';
 import { post } from './util/HttpUtil';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
 
@@ -12,6 +13,7 @@ export default function Login() {
     });
     const [invalid, setInvalid] = useState(false);
     const [invalidErrMsgs] = useState([]);
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -34,6 +36,7 @@ export default function Login() {
 
                 if (res['code'] === 200) {
                     console.log(res['msg']);
+                    navigate('/home');
                 } else {
                     console.error(res['msg']);
                     setInvalid(true);
