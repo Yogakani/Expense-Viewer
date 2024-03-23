@@ -77,6 +77,11 @@ export default function Login() {
         invalidErrMsgs.splice(0, invalidErrMsgs.length);
     }
 
+    const handleCreateAccount = (e) => {
+        e.preventDefault();
+        navigate('/register');
+    }
+
     return(
         <div className="card mt-3 mb-3 p-1 border-end" style={{width:450}}>
             <div className="card-body">
@@ -149,7 +154,7 @@ export default function Login() {
                 <div className='row mb-4'></div>
                 <div className='row mb-3'>
                     <div className='col text-center'>
-                        <button type='submit' className='btn btn-outline-primary'>Create an Account</button>
+                        <button type='submit' className='btn btn-outline-primary' onClick={handleCreateAccount}>Create an Account</button>
                     </div>
                 </div>
             </div>
