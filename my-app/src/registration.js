@@ -300,7 +300,7 @@ export default function Registration() {
 
     const handleProceed = (e) => {
         e.preventDefault();
-        navigate("/");
+        navigate("/home");
     }
 
     return(
@@ -536,7 +536,7 @@ export default function Registration() {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col text-center">
-                                                        <p className="fst-normal">Please click on Proceed to Login.</p>
+                                                        <p className="fst-normal">Please click on Proceed to Dashboard.</p>
                                                     </div>
                                                 </div>
                                             </>
